@@ -6,17 +6,8 @@ const App = () => {
     return (
         <>
             <Navbar />
-            <Navbar />
-            <main>
-                <div>
-                    <Container maxWidth="sm">
-                        <Typography variant='h2' align="center"  gutterBottom>
-                            iPhone
-                        </Typography>
-                        
-                    </Container>
-                </div>
-            </main>
+            {/* <Navbar /> */}
+            
         </>
     )
 }

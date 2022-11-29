@@ -1,17 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Typography, AppBar,  Toolbar, CssBaseline } from '@mui/material';
 import AppleIcon from '@mui/icons-material/Apple';
 import SearchIcon from '@mui/icons-material/Search';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 export const Navbar = (props) => {
+    const [name, setName] = useState('Store');
+
     return (
         <>
             <CssBaseline  />
             <AppBar position="relative" style={{ background: '#252529' }} >{/* NavigationBar */}
                 <Toolbar >
                     <AppleIcon sx={{ ml: 25,color:'#d7d7c8' }} />            {/* icon */}
-                    <Typography variant="overline" sx={{ ml: 7 ,color:'#d7d7c8' }}>Store</Typography>
+                    <Typography variant="overline" sx={{ ml: 7 ,color:'#d7d7c8' }}>{name}</Typography>
                     <Typography variant="overline" sx={{ ml: 7 ,color:'#d7d7c8' }}>Mac</Typography>
                     <Typography variant="overline" sx={{ ml: 7 ,color:'#d7d7c8' }}>iPad</Typography>
                     <Typography variant="overline" sx={{ ml: 7 ,color:'#d7d7c8' }}>iPhone</Typography>
